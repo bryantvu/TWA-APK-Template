@@ -3,6 +3,7 @@
 - [Introduction](#introduction)
 - [FAQ](#faq)
 - [Setup](#setup)
+- [GMS vs HMS Behavior](#gms-vs-hms-behavior)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
 
@@ -47,11 +48,15 @@ Items to change:
 - **Splash Image**
   All splash images must be replaced with the PNG files of following square dimensions and name.
   **Note: splash images might not appear on Huawei devices.*
-	- res/drawable-hdpi/splash.png (300px square)
-	- res/drawable-mdpi/splash.png (450px square)
-	- res/drawable-xhdpi/splash.png (600px square)
-	- res/drawable-xxhdpi/splash.png (900px square)
-	- res/drawable-xxxhdpi/splash.png (1200px square)
+    - res/drawable-hdpi/splash.png (300px square)
+    - res/drawable-mdpi/splash.png (450px square)
+    - res/drawable-xhdpi/splash.png (600px square)
+    - res/drawable-xxhdpi/splash.png (900px square)
+    - res/drawable-xxxhdpi/splash.png (1200px square)
+
+## GMS vs HMS Behavior
+
+Please note that the LauncherActivity has been modified to check for GMS availability. If GMS is detected, the TWA launcher will proceed as normal and select the best TWA provider on the device. In the case that GMS is not available, it is assumed that the app is running on a Huawei device and the TWA is force launched using the Huawei Browser.
 
 ## License
 This Android sample code is licensed under the  [Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0)
