@@ -19,11 +19,11 @@ plugins {
 }
 
 def twaManifest = [
-    applicationId: 'com.duolingo.twa',
-    hostName: 'duolingo.com', // The domain being opened in the TWA.
+    applicationId: 'com.mywebsite.twa',
+    hostName: 'pictroom.com', // The domain being opened in the TWA.
     launchUrl: '/', // The start path for the TWA. Must be relative to the domain.
-    name: 'Duolingo', // The application name.
-    launcherName: 'Duolingo', // The name shown on the Android Launcher.
+    name: 'My Website', // The application name.
+    launcherName: 'My Website', // The name shown on the Android Launcher.
     themeColor: '#59cb06', // The color used for the status bar.
     navigationColor: '#59cb06', // The color used for the navigation bar.
     navigationColorDark: '#59cb06', // The color used for the dark navbar.
@@ -50,7 +50,7 @@ def twaManifest = [
 android {
     compileSdkVersion 32
     defaultConfig {
-        applicationId "com.duolingo.twa"
+        applicationId "com.mywebsite.twa"
         minSdkVersion 19
         targetSdkVersion 32
         versionCode 1
